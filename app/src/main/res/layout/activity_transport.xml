@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1EA"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layoutcommon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Getting Around"
+                android:fontFamily="@font/playfair_display_bold"
+                android:textSize="28sp"
+                android:textColor="#1F3D3B"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/buss" />
+
+                        <ImageButton
+                            android:id="@+id/saveBus"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jalandhar City Bus Service"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Routes: Across City &amp; Cantt\nTiming: 7:00 AM - 9:00 PM"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+<!--junction-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardJunction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/junction" />
+
+                        <ImageButton
+                            android:id="@+id/saveJunction"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jalandhar City Junction"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Major connectivity to Amritsar, Delhi\nLocation: Railway Road"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            PAP-->
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/cardPAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pap" />
+
+                        <ImageButton
+                            android:id="@+id/savePAP"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jalandhar PAP Chownk"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Major trafficked junction and transit hub in Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+<!--rama mandi-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRamaMandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ramamandi" />
+
+                        <ImageButton
+                            android:id="@+id/saveRamaMandi"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jalandhar Rama Mandi"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="National Highway towards Chandigarh, Delhi, and Amritsar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            airport-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAirport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/airport" />
+
+                        <ImageButton
+                            android:id="@+id/saveAirport"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sri Guru Ram Das Ji International Airport"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="connectivity from jalandhar to amritsar, Delhi\nLocation: Raja Sansi, Amritsar, Punjab
+"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

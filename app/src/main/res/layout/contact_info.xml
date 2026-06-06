@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F1EA">
+
+    <include layout="@layout/header_layoutcommon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Heading Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get in Touch"
+                android:textSize="32sp"
+                android:textColor="#1F3D3B"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/playfair_display_bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have questions or suggestions? We'd love to hear from you"
+                android:textColor="#777777"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+
+            <!-- Form Card (Matches shadow-xl and rounded-3xl) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F2EFE4"
+                        android:hint="Your name"
+                        android:paddingStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:inputType="textPersonName"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="#1F3D3B" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F2EFE4"
+                        android:hint="your@email.com"
+                        android:paddingStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:inputType="textEmailAddress"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subject"
+                        android:textColor="#1F3D3B" />
+
+                    <EditText
+                        android:id="@+id/etSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#F2EFE4"
+                        android:hint="How can we help?"
+                        android:paddingStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Message"
+                        android:textColor="#1F3D3B" />
+
+                    <EditText
+                        android:id="@+id/etMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="#F2EFE4"
+                        android:hint="Your message..."
+                        android:gravity="top"
+                        android:padding="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:inputType="textMultiLine"/>
+
+                    <!-- Submit Button -->
+                    <Button
+                        android:id="@+id/btnSend"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="Send Message"
+                        android:backgroundTint="#D4A437"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        app:cornerRadius="28dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Information Cards (Email, Phone, Office) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@android:drawable/ic_dialog_email"
+                        android:background="#FAF3E0"
+                        app:tint="#D4A437"
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textStyle="bold"
+                            android:textColor="#1F3D3B"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="support@smartcityguide.com"
+                            android:textColor="#777777"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Repeat for Phone and Office... (Added below for brevity) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@android:drawable/stat_sys_phone_call"
+                        android:background="#FAF3E0"
+                        app:tint="#D4A437"
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textStyle="bold"
+                            android:textColor="#1F3D3B"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91 9646771741 \n Mon-Fri 9am-6pm"
+                            android:textColor="#777777"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/outline_add_location_24"
+                        android:background="#FAF3E0"
+                        app:tint="#D4A437"
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Office"
+                            android:textStyle="bold"
+                            android:textColor="#1F3D3B"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="123 Travel Avenue \n City Center, ST 12345"
+                            android:textColor="#777777"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "277350061320",
+    "project_id": "smartcityjalandhar-d33cd",
+    "storage_bucket": "smartcityjalandhar-d33cd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277350061320:android:8189c21efd8be8eebbc8bd",
+        "android_client_info": {
+          "package_name": "com.guide.smartcity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUq3QMQQApzEZLzNFZCNEGYdtzGCfxfDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

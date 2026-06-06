@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1EA"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layoutcommon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore Jalandhar"
+                android:fontFamily="@font/playfair_display_bold"
+                android:textSize="28sp"
+                android:textColor="#1F3D3B"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- 1. Devi Talab Mandir -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDeviTalab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/devitalab" />
+
+                        <ImageButton
+                            android:id="@+id/saveDeviTalab"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Devi Talab Mandir"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Doaba Chowk, Jalandhar"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 2. Pushpa Gujral Science City -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardScienceCity"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pushpa_gujral" />
+
+                        <ImageButton
+                            android:id="@+id/saveScienceCity"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Pushpa Gujral Science City"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Jalandhar-Kapurthala Road"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 3. Lovely Professional University -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLPU"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/lovely" />
+
+                        <ImageButton
+                            android:id="@+id/saveLPU"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Lovely Professional University"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Jalandhar-Phagwara Road"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 4. Wonderland Amusement Park -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWonderland"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/wonderland2" />
+
+                        <ImageButton
+                            android:id="@+id/saveWonderland"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Thrilling Wonderland Amusement Park"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Jalandhar Road"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 5. Guru Gobind Singh Stadium -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStadium"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/stadium2" />
+
+                        <ImageButton
+                            android:id="@+id/saveStadium"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Guru Gobind Singh Stadium"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Jalandhar"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 6. Gurudwara Talhan Sahib Ji -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTalhan"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gurudwara" />
+
+                        <ImageButton
+                            android:id="@+id/saveTalhan"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Gurudwara Talhan Sahib Ji"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Jalandhar"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 7. Nikku Park -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNikkuPark"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/nikkupark" />
+
+                        <ImageButton
+                            android:id="@+id/saveNikkuPark"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Nikku Park"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Model Town Park Jalandhar"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 8. Jang-e-Azadi Memorial -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardJungeazadi"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp">
+                    <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jang"  />
+
+                    <ImageButton
+                        android:id="@+id/saveJungeazadi"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="12dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/bookmark_outline"
+                        android:padding="8dp"/>
+
+                </FrameLayout>
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jang" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Jang-e-Azadi Memorial"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="Grand Trunk Rd, Kartarpur, jalandhar"
+                        android:textColor="#1F3D3B"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

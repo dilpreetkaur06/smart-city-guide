@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1EA"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layoutcommon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dine in Jalandhar"
+                android:fontFamily="@font/playfair_display_bold"
+                android:textSize="28sp"
+                android:textColor="#1F3D3B"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHaveli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/haveli2" />
+
+                        <ImageButton
+                            android:id="@+id/saveHaveli"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Haveli"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Authentic Punjabi Cuisine\nG.T. Road, Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOrchid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/orchid" />
+
+                        <ImageButton
+                            android:id="@+id/saveOrchid"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The Orchid"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Continental &amp; Indian cuisines \n296-297 Lajpat Nagar Fortune Avenue, Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardKabab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kebabfactory" />
+
+                        <ImageButton
+                            android:id="@+id/saveKabab"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The Great Kabab Factory"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mughlai &amp; North Indian\nRadisson Hotel, Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDolce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dolce" />
+
+                        <ImageButton
+                            android:id="@+id/saveDolce"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The Dolce"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exquisite cuisine, handcrafted Cocktails &amp; Luxury\nModel Town, Jalandhar,"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFoodBazar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/foodbazar" />
+
+                        <ImageButton
+                            android:id="@+id/saveFoodBazar"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food Bazar"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Casual spot for vegetarian fast food \n Fentonganj, Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHeebee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/heebeec" />
+
+                        <ImageButton
+                            android:id="@+id/saveHeebee"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Heebee Coffee"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Preminum Coffee, Italian &amp; Chinese Cuisine, Biscoff treats, and BBQ Cottage\n Nursery Road, Model Town, Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBalcony"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/balcony" />
+
+                        <ImageButton
+                            android:id="@+id/saveBalcony"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The Balcony Cafe"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Savoring delicious appetizers\n White Diamond Palace, Mithapur, Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardChatter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/chatter" />
+
+                        <ImageButton
+                            android:id="@+id/saveChatter"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chatter Box"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Great Ambience, Family Times\nJawahar Nagar Road Shangrila Hotel, Jalandhar"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEastwood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/eastwood" />
+
+                        <ImageButton
+                            android:id="@+id/saveEastwood"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="top|end"
+                            android:layout_margin="12dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/bookmark_outline"
+                            android:padding="8dp"/>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Eastwood Village"
+                            android:textColor="#1F3D3B"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shop brands, enjoy nightlife, dine at major food chains, and experience seasonal events \nJalandhar-Phagwara, National Hwy"
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

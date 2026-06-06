@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1EA"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layoutcommon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:fontFamily="@font/playfair_display_bold"
+            android:textSize="32sp"
+            android:textColor="#1F3D3B"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnCallPolice"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Call Police (100)"
+            android:backgroundTint="#1F3D3B"
+            android:layout_marginBottom="15dp"
+            app:cornerRadius="30dp"/>
+
+        <Button
+            android:id="@+id/btnCallAmbulance"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Call Ambulance (108)"
+            android:backgroundTint="#D4A437"
+            android:textColor="#1F3D3B"
+            app:cornerRadius="30dp"/>
+
+        <Button
+            android:id="@+id/btnCallFireBrigade"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Fire Brigade (112)"
+            android:backgroundTint="#1F3D3B"
+            android:layout_marginTop="15dp"
+            app:cornerRadius="30dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

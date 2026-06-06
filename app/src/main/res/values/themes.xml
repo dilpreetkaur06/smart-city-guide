@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.SmartCityGuide" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

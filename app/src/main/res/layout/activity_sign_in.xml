@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1EA"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layoutcommon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/playfair_display_bold"
+                android:text="Join Us"
+                android:textColor="#1F3D3B"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Create an account to start exploring"
+                android:textColor="#777777"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Full Name" android:textStyle="bold" android:textColor="#1F3D3B"/>
+                    <EditText android:id="@+id/etFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/edittext_border"
+                        android:hint="John Doe"
+                        android:paddingLeft="15dp"
+                        android:drawableStart="@drawable/user_small"
+                        android:drawablePadding="12dp"
+                        android:layout_marginTop="8dp"
+                        android:inputType="textPersonName"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Email" android:textStyle="bold" android:textColor="#1F3D3B"/>
+                    <EditText android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/edittext_border"
+                        android:hint="your@email.com"
+                        android:paddingLeft="15dp"
+                        android:drawableStart="@drawable/email_small"
+                        android:drawablePadding="12dp"
+                        android:layout_marginTop="8dp"
+                        android:inputType="textEmailAddress"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Password" android:textStyle="bold" android:textColor="#1F3D3B"/>
+                    <EditText android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/edittext_border"
+                        android:hint="••••••••"
+                        android:inputType="textPassword"
+                        android:paddingLeft="15dp"
+                        android:drawableStart="@drawable/pswd"
+                        android:drawablePadding="12dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:id="@+id/cbAgree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I agree to the Terms of Service and Privacy Policy"
+                            android:textSize="12sp"
+                            android:textColor="#777777"/>
+                    </LinearLayout>
+
+                    <Button android:id="@+id/btnCreateAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="25dp"
+                        android:backgroundTint="#D4A437"
+                        android:text="Create Account"
+                        android:textAllCaps="false"
+                        android:textColor="#1F3D3B"
+                        android:textStyle="bold"
+                        app:cornerRadius="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Already have an account? "
+                            android:textColor="#777777" />
+                        <TextView
+                            android:id="@+id/tvSignInLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign in"
+                            android:textStyle="bold"
+                            android:textColor="#D4A437" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
